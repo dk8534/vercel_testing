@@ -1,0 +1,87 @@
+{% extends 'main.html' %} {% block content %}
+{% load static %}
+<div class="container my-5">
+  <div class="d-flex flex-column justify-content-center align-items-center mx-auto">
+    <!-- heading text -->
+    <h1 class="display1 text-white text-center text-uppercase mt-4 mb-4">
+      My
+      Projects</h1>
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4   my-2">
+            <div class="card" style="width: 18rem; height: 20rem">
+              <img src="{% static '/assets/images/flexbook.png' %}" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Facebook UI</h5>
+                <p class="card-text">A real clone of facebook.</p>
+                <a href='https://flexbook.vercel.app' class="btn btn-secondary mb-0">Visit</a>
+              </div>
+            </div>
+       </div>
+     <div class="col-md-4   my-2">
+        <div class="card" style="width: 18rem; height: 20rem">
+          <img src="{% static '/assets/images/GPT3.png' %}" class="card-img-top h-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GPT3 </h5>
+            <p class="card-text">A responsive site built with React Js.
+            </p>
+            <a href="#" class="btn btn-secondary mb-0">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4   my-2">
+        <div class="card" style="width: 18rem; height: 20rem">
+          <img src="{% static '/assets/images/Todo.png' %}" class="card-img-top h-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TODO APP </h5>
+            <p class="card-text">A web application for making todo's
+            </p>
+            <a href="#" class="btn btn-secondary mb-0">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4   my-2">
+        <div class="card" style="width: 18rem; height: 20rem">
+          <img src="{% static '/assets/images/THRIVE.png' %}" class="card-img-top h-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thrive Insurance Brokers Limited</h5>
+            <p class="card-text"> An insurance website</p>
+            <a href="https://thrivebackend.vercel.app" class="btn btn-secondary mb-0">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4   my-2">
+        <div class="card" style="width: 18rem; height: 20rem">
+          <img src="{% static '/assets/images/studybud.png' %}" class="card-img-top h-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Discord chat</h5>
+            <p class="card-text"> A discord look alike site
+            </p>
+            <a href="#" class="btn btn-secondary mb-0">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4   my-2">
+        <div class="card" style="width: 18rem; height: 20rem">
+          <img src="{% static '/assets/images/cirec.png' %}" class="card-img-top h-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Discord chat</h5>
+            <p class="card-text"> A discord look alike site
+            </p>
+            <a href="https://edetdavid.github.io/Cirecleen" class="btn btn-secondary mb-0">Visit</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+<br>
+<br>
+
+</div>
+
+{% endblock content %}

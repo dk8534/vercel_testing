@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" , mininmun-scale="1.0" , maximum-scale="1.0" />
+  <title>Dvooskid.net</title>
+   <link class="rounded-pill" rel = "icon" href ="https://edetdavid.vercel.app/static/assets/images/frosh.png" 
+        type = "image/x-icon">
+  <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/font-awesome/all.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/font-awesome/fontawesome.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/master.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}" />
+  <link rel="stylesheet" href=" {% static 'assets/css/style.css' %}" />
+
+  <script src="{% static 'assets/js/chart.js' %} "></script>
+</head>
+
+<body  id="body">
+
+
+   <center>
+    <!-- preloader -->
+    <div id="preloader" style="background-image: url('{% static  "assets/preloaders/pink-diamond.gif" %}');">
+    </div>
+  </center> 
+
+  <!-- preloader delay -->
+  <div class="d-none">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVbrHTRxgsk" title="Youtube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    
+  
+  </div>
+  <!--  end        -->
+
+  
+  <div class="app">
+    {% include "navbar.html" %}{% block content %} {% endblock content %}{% include "footer.html" %}
+  </div> 
+  <script src="{% static 'assets/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static './assets/js/chart1.js' %}"></script>
+  <script src="{% static './assets/js/aos.js' %}"></script>
+  <script src="{% static './assets/js/main.js' %}"></script>
+ <script>
+    AOS.init();
+  </script>
+ 
+  </body>
+
+</html>
